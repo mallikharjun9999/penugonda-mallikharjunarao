@@ -8,6 +8,7 @@ import { MobileMenu } from "@/components/MobileMenu";
 import { Link } from "react-router-dom";
 import profileMainImage from "@/assets/profile-main.jpg";
 import profileWorkImage from "@/assets/profile-work.jpg";
+import aboutSectionImage from "@/assets/about-section.jpg";
 import {
   Github,
   Linkedin,
@@ -158,6 +159,20 @@ const Index = () => {
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8 sm:mb-12 text-gradient">
               About Me
             </h2>
+            <div className="mb-8 sm:mb-12 animate-slide-up">
+              <div className="relative w-full h-48 sm:h-64 md:h-80 lg:h-96 rounded-xl overflow-hidden shadow-lg">
+                <img
+                  src={aboutSectionImage}
+                  alt="Professional mentoring environment"
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+                <div className="absolute bottom-4 left-4 text-white">
+                  <p className="text-sm sm:text-base font-medium">Empowering the next generation of developers</p>
+                </div>
+              </div>
+            </div>
             <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 items-start">
               <div className="animate-slide-left">
                 <Card className="glass-card">
