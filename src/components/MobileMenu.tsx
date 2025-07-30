@@ -23,7 +23,7 @@ export const MobileMenu = ({ onSectionClick }: MobileMenuProps) => {
   };
 
   return (
-    <div className="md:hidden">
+    <div className="md:hidden z-50">
       <Button
         variant="ghost"
         size="icon"
@@ -44,44 +44,52 @@ export const MobileMenu = ({ onSectionClick }: MobileMenuProps) => {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.2 }}
-            className="mobile-menu"
+            className="fixed inset-0 bg-black/60 flex items-start justify-end p-4 z-40"
             onClick={toggleMenu}
           >
             <motion.div
-              initial={{ scale: 0.95, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              exit={{ scale: 0.95, opacity: 0 }}
+              initial={{ x: 100, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              exit={{ x: 100, opacity: 0 }}
               transition={{ duration: 0.2 }}
-              className="mobile-menu-content"
+              className="bg-white w-3/4 max-w-xs rounded-lg shadow-lg p-6 pt-4 space-y-6 relative"
               onClick={(e) => e.stopPropagation()}
             >
-              <div className="space-y-6">
-                <button
-                  onClick={() => handleSectionClick('about')}
-                  className="text-2xl font-medium hover:text-primary transition-colors"
-                >
-                  About
-                </button>
-                <Link
-                  to="/projects"
-                  onClick={handleLinkClick}
-                  className="text-2xl font-medium hover:text-primary transition-colors block"
-                >
-                  Projects
-                </Link>
-                <button
-                  onClick={() => handleSectionClick('mentorship')}
-                  className="text-2xl font-medium hover:text-primary transition-colors"
-                >
-                  Mentorship
-                </button>
-                <button
-                  onClick={() => handleSectionClick('contact')}
-                  className="text-2xl font-medium hover:text-primary transition-colors"
-                >
-                  Contact
-                </button>
-              </div>
+              <button
+                onClick={toggleMenu}
+                className="absolute top-1 left-1 z-50 bg-orange-500 text-white rounded-xl p-2 shadow-md border hover:bg-orange-600 transition-all duration-200"
+              >
+                <X className="h-4 w-10" />
+              </button>
+
+
+
+
+              <button
+                onClick={() => handleSectionClick("about")}
+                className="text-xl font-medium hover:text-primary transition-colors block"
+              >
+                About
+              </button>
+              <Link
+                to="/projects"
+                onClick={handleLinkClick}
+                className="text-xl font-medium hover:text-primary transition-colors block"
+              >
+                Projects
+              </Link>
+              <button
+                onClick={() => handleSectionClick("mentorship")}
+                className="text-xl font-medium hover:text-primary transition-colors block"
+              >
+                Mentorship
+              </button>
+              <button
+                onClick={() => handleSectionClick("contact")}
+                className="text-xl font-medium hover:text-primary transition-colors block"
+              >
+                Contact
+              </button>
             </motion.div>
           </motion.div>
         )}

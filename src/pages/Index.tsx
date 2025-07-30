@@ -7,7 +7,6 @@ import { ContactForm } from "@/components/ContactForm";
 import { MobileMenu } from "@/components/MobileMenu";
 import { Link } from "react-router-dom";
 import profileMainImage from "@/assets/profile-main.png.jpg";
-import profileWorkImage from "@/assets/profile-work.jpg";
 import aboutSectionImage from "@/assets/about-section.jpg.jpg";
 import {
   Github,
@@ -98,6 +97,7 @@ const Index = () => {
               </div>
               <ThemeToggle />
               <MobileMenu onSectionClick={scrollToSection} />
+
             </div>
           </div>
         </div>
