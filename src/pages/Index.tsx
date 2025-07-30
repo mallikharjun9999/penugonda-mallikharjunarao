@@ -6,9 +6,9 @@ import { ThemeToggle } from "@/components/ThemeToggle";
 import { ContactForm } from "@/components/ContactForm";
 import { MobileMenu } from "@/components/MobileMenu";
 import { Link } from "react-router-dom";
-import profileMainImage from "@/assets/profile-main.jpg";
+import profileMainImage from "@/assets/profile-main.png.jpg";
 import profileWorkImage from "@/assets/profile-work.jpg";
-import aboutSectionImage from "@/assets/about-section.jpg";
+import aboutSectionImage from "@/assets/about-section.jpg.jpg";
 import {
   Github,
   Linkedin,
@@ -160,7 +160,7 @@ const Index = () => {
               About Me
             </h2>
             <div className="mb-8 sm:mb-12 animate-slide-up">
-              <div className="relative w-full h-48 sm:h-64 md:h-80 lg:h-96 rounded-xl overflow-hidden shadow-lg">
+              <div className="relative w-[160px] sm:w-[200px] md:w-[260px] lg:w-[300px] xl:w-[340px] aspect-[852/1065] rounded-xl overflow-hidden shadow-lg mx-auto">
                 <img
                   src={aboutSectionImage}
                   alt="Professional mentoring environment"
@@ -169,7 +169,7 @@ const Index = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
                 <div className="absolute bottom-4 left-4 text-white">
-                  <p className="text-sm sm:text-base font-medium">Empowering the next generation of developers</p>
+                  <p className="text-xs sm:text-sm font-medium">Empowering the next generation of developers</p>
                 </div>
               </div>
             </div>
