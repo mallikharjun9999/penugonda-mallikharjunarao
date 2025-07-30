@@ -175,9 +175,9 @@ const Index = () => {
             </div>
             <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 items-start">
               <div className="animate-slide-left">
-                <Card className="glass-card">
+                <Card className="glass-card animated-card card-gradient-1 animate-card-float">
                   <CardContent className="p-6 sm:p-8">
-                    <h3 className="text-xl sm:text-2xl font-semibold mb-4">My Journey</h3>
+                    <h3 className="text-xl sm:text-2xl font-semibold mb-4 text-gradient">My Journey</h3>
                     <p className="text-muted-foreground leading-relaxed mb-6 text-sm sm:text-base">
                       As a passionate Technical Mentor at NxtWave, I've dedicated my career to bridging the gap between
                       complex technology and practical learning. I believe in making full-stack development accessible
@@ -191,9 +191,9 @@ const Index = () => {
                 </Card>
               </div>
               <div className="animate-slide-right">
-                <Card className="glass-card">
+                <Card className="glass-card animated-card card-gradient-2 animate-card-float" style={{ animationDelay: '1s' }}>
                   <CardContent className="p-6 sm:p-8">
-                    <h3 className="text-xl sm:text-2xl font-semibold mb-4">My Mission</h3>
+                    <h3 className="text-xl sm:text-2xl font-semibold mb-4 text-gradient">My Mission</h3>
                     <p className="text-muted-foreground leading-relaxed mb-6 text-sm sm:text-base">
                       To simplify full-stack and backend development, empower students with job-ready projects,
                       and make complex topics like DSA, Java, Python, C++, SQL, Node.js, HTML, CSS, JavaScript,
@@ -240,28 +240,28 @@ const Index = () => {
             Mentorship Impact
           </h2>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 max-w-5xl mx-auto mb-8 sm:mb-12">
-            <Card className="text-center glass-card">
+            <Card className="text-center glass-card animated-card card-gradient-1 animate-pulse-glow">
               <CardContent className="p-4 sm:p-6">
                 <Users className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 mx-auto mb-2 sm:mb-4 text-primary" />
                 <div className="text-xl sm:text-2xl md:text-3xl font-bold text-primary mb-1 sm:mb-2">1000+</div>
                 <div className="text-xs sm:text-sm text-muted-foreground">Doubts Resolved</div>
               </CardContent>
             </Card>
-            <Card className="text-center glass-card">
+            <Card className="text-center glass-card animated-card card-gradient-2 animate-pulse-glow" style={{ animationDelay: '0.5s' }}>
               <CardContent className="p-4 sm:p-6">
                 <BookOpen className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 mx-auto mb-2 sm:mb-4 text-primary" />
                 <div className="text-xl sm:text-2xl md:text-3xl font-bold text-primary mb-1 sm:mb-2">500+</div>
                 <div className="text-xs sm:text-sm text-muted-foreground">Students Mentored</div>
               </CardContent>
             </Card>
-            <Card className="text-center glass-card">
+            <Card className="text-center glass-card animated-card card-gradient-3 animate-pulse-glow" style={{ animationDelay: '1s' }}>
               <CardContent className="p-4 sm:p-6">
                 <Award className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 mx-auto mb-2 sm:mb-4 text-primary" />
                 <div className="text-xl sm:text-2xl md:text-3xl font-bold text-primary mb-1 sm:mb-2">100%</div>
                 <div className="text-xs sm:text-sm text-muted-foreground">Job-Ready Focus</div>
               </CardContent>
             </Card>
-            <Card className="text-center glass-card">
+            <Card className="text-center glass-card animated-card card-gradient-4 animate-pulse-glow" style={{ animationDelay: '1.5s' }}>
               <CardContent className="p-4 sm:p-6">
                 <Code className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 mx-auto mb-2 sm:mb-4 text-primary" />
                 <div className="text-xl sm:text-2xl md:text-3xl font-bold text-primary mb-1 sm:mb-2">∞</div>
@@ -270,9 +270,9 @@ const Index = () => {
             </Card>
           </div>
           <div className="text-center">
-            <Card className="glass-card max-w-4xl mx-auto">
+            <Card className="glass-card animated-card card-gradient-3 max-w-4xl mx-auto animate-card-float" style={{ animationDelay: '2s' }}>
               <CardContent className="p-6 sm:p-8">
-                <h3 className="text-xl sm:text-2xl font-semibold mb-4">Teaching Philosophy</h3>
+                <h3 className="text-xl sm:text-2xl font-semibold mb-4 text-gradient">Teaching Philosophy</h3>
                 <p className="text-muted-foreground leading-relaxed text-sm sm:text-base">
                   I believe in learning through building. Every concept I teach is backed by real-world projects
                   that students can showcase in their portfolios. My approach focuses on making complex topics

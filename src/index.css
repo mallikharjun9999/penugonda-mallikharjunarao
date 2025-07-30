@@ -41,6 +41,10 @@ All colors MUST be HSL.
     /* Portfolio specific colors */
     --hero-gradient-start: 213 97% 50%;
     --hero-gradient-end: 251 91% 59%;
+    --card-gradient-1: 142 76% 36%;
+    --card-gradient-2: 38 92% 50%;
+    --card-gradient-3: 213 97% 50%;
+    --card-gradient-4: 251 91% 59%;
     --success: 142 76% 36%;
     --warning: 38 92% 50%;
     --info: 213 97% 50%;
@@ -87,6 +91,10 @@ All colors MUST be HSL.
     /* Portfolio specific colors */
     --hero-gradient-start: 213 97% 50%;
     --hero-gradient-end: 251 91% 59%;
+    --card-gradient-1: 142 76% 36%;
+    --card-gradient-2: 38 92% 50%;
+    --card-gradient-3: 213 97% 50%;
+    --card-gradient-4: 251 91% 59%;
     --success: 142 76% 36%;
     --warning: 38 92% 50%;
     --info: 213 97% 50%;
@@ -122,7 +130,31 @@ All colors MUST be HSL.
   }
   
   .glass-card {
-    @apply backdrop-blur-sm bg-background/80 border border-border/50;
+    @apply backdrop-blur-sm bg-background/80 border border-border/50 hover:shadow-lg hover:scale-105 transition-all duration-300;
+  }
+  
+  .animated-card {
+    @apply transform transition-all duration-300 hover:scale-105 hover:shadow-xl;
+  }
+  
+  .card-gradient-1 {
+    background: linear-gradient(135deg, hsl(var(--card-gradient-1) / 0.1), hsl(var(--card-gradient-2) / 0.1));
+    border: 1px solid hsl(var(--card-gradient-1) / 0.2);
+  }
+  
+  .card-gradient-2 {
+    background: linear-gradient(135deg, hsl(var(--card-gradient-3) / 0.1), hsl(var(--card-gradient-4) / 0.1));
+    border: 1px solid hsl(var(--card-gradient-3) / 0.2);
+  }
+  
+  .card-gradient-3 {
+    background: linear-gradient(135deg, hsl(var(--warning) / 0.1), hsl(var(--success) / 0.1));
+    border: 1px solid hsl(var(--warning) / 0.2);
+  }
+  
+  .card-gradient-4 {
+    background: linear-gradient(135deg, hsl(var(--info) / 0.1), hsl(var(--primary) / 0.1));
+    border: 1px solid hsl(var(--info) / 0.2);
   }
   
   .tech-badge {
@@ -211,6 +243,24 @@ All colors MUST be HSL.
 
 .animate-slide-right {
   animation: slideInRight 0.6s ease-out;
+}
+
+@keyframes cardFloat {
+  0%, 100% { transform: translateY(0px) scale(1); }
+  50% { transform: translateY(-5px) scale(1.02); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 5px hsl(var(--primary) / 0.3); }
+  50% { box-shadow: 0 0 20px hsl(var(--primary) / 0.6), 0 0 30px hsl(var(--primary) / 0.3); }
+}
+
+.animate-card-float {
+  animation: cardFloat 3s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
 }
 
 @layer base {
