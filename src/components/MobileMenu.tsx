@@ -52,41 +52,49 @@ export const MobileMenu = ({ onSectionClick }: MobileMenuProps) => {
               animate={{ x: 0, opacity: 1 }}
               exit={{ x: 100, opacity: 0 }}
               transition={{ duration: 0.2 }}
-              className="bg-white w-3/4 max-w-xs rounded-lg shadow-lg p-6 pt-4 space-y-6 relative"
+              className="w-3/4 max-w-xs rounded-lg shadow-lg p-6 pt-4 space-y-6 relative 
+                         bg-gradient-to-br from-orange-100 via-white to-yellow-50 
+                         dark:from-gray-900 dark:via-gray-800 dark:to-black"
               onClick={(e) => e.stopPropagation()}
             >
+              {/* Top-left Close Button */}
               <button
                 onClick={toggleMenu}
-                className="absolute top-1 left-1 z-50 bg-orange-500 text-white rounded-xl p-2 shadow-md border hover:bg-orange-600 transition-all duration-200"
+                className="absolute top-1 left-1 z-50 
+                           bg-orange-500 text-white 
+                           dark:bg-orange-400 dark:hover:bg-orange-500 
+                           rounded-xl p-2 shadow-md border 
+                           hover:bg-orange-600 transition-all duration-200"
               >
-                <X className="h-4 w-10" />
+                <X className="h-3 w-10" />
               </button>
 
-
-
-
+              {/* Menu Items */}
               <button
                 onClick={() => handleSectionClick("about")}
-                className="text-xl font-medium hover:text-primary transition-colors block"
+                className="text-xl font-medium text-gray-900 dark:text-white hover:text-primary transition-colors block"
               >
                 About
               </button>
+
               <Link
                 to="/projects"
                 onClick={handleLinkClick}
-                className="text-xl font-medium hover:text-primary transition-colors block"
+                className="text-xl font-medium text-gray-900 dark:text-white hover:text-primary transition-colors block"
               >
                 Projects
               </Link>
+
               <button
                 onClick={() => handleSectionClick("mentorship")}
-                className="text-xl font-medium hover:text-primary transition-colors block"
+                className="text-xl font-medium text-gray-900 dark:text-white hover:text-primary transition-colors block"
               >
                 Mentorship
               </button>
+
               <button
                 onClick={() => handleSectionClick("contact")}
-                className="text-xl font-medium hover:text-primary transition-colors block"
+                className="text-xl font-medium text-gray-900 dark:text-white hover:text-primary transition-colors block"
               >
                 Contact
               </button>
