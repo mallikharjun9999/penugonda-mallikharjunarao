@@ -185,7 +185,7 @@ const Index = () => {
                     </p>
                     <div className="flex items-center gap-2 text-primary">
                       <Users className="w-4 h-4 sm:w-5 sm:h-5" />
-                      <span className="font-semibold text-sm sm:text-base">1000+ students mentored</span>
+                      <span className="font-semibold text-sm sm:text-base">500+ students mentored</span>
                     </div>
                   </CardContent>
                 </Card>
