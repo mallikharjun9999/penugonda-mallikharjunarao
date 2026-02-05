@@ -62,7 +62,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Navigation */}
-      <nav className="fixed top-0 w-full z-50 glass-card">https://github.com/mallikharjun9999/penugonda-mallikharjunarao.git
+      <nav className="fixed top-0 w-full z-50 glass-card">
         <div className="container-width">
           <div className="flex items-center justify-between h-16">
             <div className="text-lg sm:text-xl font-bold text-gradient">
