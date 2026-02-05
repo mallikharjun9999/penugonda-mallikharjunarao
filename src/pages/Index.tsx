@@ -62,7 +62,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Navigation */}
-      <nav className="fixed top-0 w-full z-50 glass-card">
+      <nav className="fixed top-0 w-full z-50 glass-card">https://github.com/mallikharjun9999/penugonda-mallikharjunarao.git
         <div className="container-width">
           <div className="flex items-center justify-between h-16">
             <div className="text-lg sm:text-xl font-bold text-gradient">
@@ -121,7 +121,7 @@ const Index = () => {
               PENUGONDA MALLIKHARJUNARAO
             </h1>
             <div className="text-sm sm:text-lg md:text-xl lg:text-2xl mb-3 sm:mb-4 text-white/90">
-              💻 Software Developer Mentor | Tech Educator | Tech Trainer
+              💻 Software Developement Trainer| Tech Educator | Tech Trainer
             </div>
             <p className="text-sm sm:text-base md:text-lg lg:text-xl mb-6 sm:mb-8 text-white/80 max-w-3xl mx-auto leading-relaxed px-4">
               "Mentoring future full-stack developers through real-world code and career clarity."
@@ -179,13 +179,13 @@ const Index = () => {
                   <CardContent className="p-6 sm:p-8">
                     <h3 className="text-xl sm:text-2xl font-semibold mb-4 text-gradient">My Journey</h3>
                     <p className="text-muted-foreground leading-relaxed mb-6 text-sm sm:text-base">
-                      As a passionate Technical Mentor at NxtWave, I've dedicated my career to bridging the gap between
+                      As a passionate Technical Trainer, I've dedicated my career to bridging the gap between
                       complex technology and practical learning. I believe in making full-stack development accessible
                       to everyone through hands-on projects and real-world applications.
                     </p>
                     <div className="flex items-center gap-2 text-primary">
                       <Users className="w-4 h-4 sm:w-5 sm:h-5" />
-                      <span className="font-semibold text-sm sm:text-base">500+ students mentored</span>
+                      <span className="font-semibold text-sm sm:text-base">500+ students teached</span>
                     </div>
                   </CardContent>
                 </Card>
@@ -251,7 +251,7 @@ const Index = () => {
               <CardContent className="p-4 sm:p-6">
                 <BookOpen className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 mx-auto mb-2 sm:mb-4 text-primary" />
                 <div className="text-xl sm:text-2xl md:text-3xl font-bold text-primary mb-1 sm:mb-2">500+</div>
-                <div className="text-xs sm:text-sm text-muted-foreground">Students Mentored</div>
+                <div className="text-xs sm:text-sm text-muted-foreground">Students Trained</div>
               </CardContent>
             </Card>
             <Card className="text-center glass-card animated-card card-gradient-3 animate-pulse-glow" style={{ animationDelay: '1s' }}>
