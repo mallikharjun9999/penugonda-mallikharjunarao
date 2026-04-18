@@ -8,6 +8,202 @@ import { ThemeToggle } from "@/components/ThemeToggle";
 
 const projects = [
   {
+  title: "🎨 Ghibli Art Generator",
+  description: "AI-powered image generation app that transforms prompts into Studio Ghibli-inspired artwork using modern generative AI tools.",
+  features: [
+    "Text-to-image generation",
+    "Ghibli-style art rendering",
+    "Interactive UI",
+    "Instant image previews"
+  ],
+  tech: ["React", "Vite", "AI API"],
+  github: "https://github.com/mallikharjun9999/ghibli-art-generator.git",
+  live: null,
+  cta: "View GitHub Repo"
+},
+{
+  title: "📷 Smart Attendance App",
+  description: "Automated attendance management system designed to track and manage student attendance efficiently.",
+  features: [
+    "Attendance marking",
+    "Student management",
+    "Attendance reports",
+    "Admin dashboard"
+  ],
+  tech: ["Python", "Django", "SQLite"],
+  github: "https://github.com/mallikharjun9999/smart-attendance-app",
+  live: null,
+  cta: "View GitHub Repo"
+},
+{
+  title: "🎵 AI Music Recommendation System",
+  description: "Machine learning-based recommendation engine that suggests songs based on user preferences and listening patterns.",
+  features: [
+    "Personalized recommendations",
+    "Music similarity engine",
+    "User preference analysis",
+    "Recommendation dashboard"
+  ],
+  tech: ["Python", "Machine Learning", "Pandas", "Streamlit"],
+  github: "https://github.com/mallikharjun9999/AI-Music-Recommendation-System/tree/main",
+  live: null,
+  cta: "View GitHub Repo"
+},
+{
+  title: "📺 Netflix Analytics Dashboard",
+  description: "Interactive analytics dashboard built to visualize Netflix content trends, ratings, genres, and country-based insights.",
+  features: [
+    "Content trend analysis",
+    "Genre insights",
+    "Country-wise analytics",
+    "Interactive charts"
+  ],
+  tech: ["Python", "Django", "Pandas", "Plotly"],
+  github: "https://github.com/mallikharjun9999/netflix-analytics-dashboard",
+  live: null,
+  cta: "View GitHub Repo"
+},
+{
+  title: "🔥 AI Forest Fire Detection System",
+  description: "Computer vision project that detects forest fire presence from images using deep learning models.",
+  features: [
+    "Fire image detection",
+    "AI-powered predictions",
+    "Real-time classification",
+    "Disaster prevention support"
+  ],
+  tech: ["Python", "TensorFlow", "OpenCV"],
+  github: "https://github.com/mallikharjun9999/AI-Forest-Fire-Detection-System.git",
+  live: null,
+  cta: "View GitHub Repo"
+},
+{
+  title: "📸 Instagram Clone",
+  description: "Social media platform clone with user posts, likes, comments, authentication, and profile management.",
+  features: [
+    "User authentication",
+    "Create posts",
+    "Like & comment system",
+    "Profile pages"
+  ],
+  tech: ["React", "Node.js", "Sqlite"],
+  github: "https://github.com/mallikharjun9999/instagram-clone.git",
+  live: null,
+  cta: "View GitHub Repo"
+},
+{
+  title: "🎧 Mood Tunes",
+  description: "Emotion-based music recommendation platform that suggests songs based on the user's current mood.",
+  features: [
+    "Mood detection",
+    "Music recommendations",
+    "Simple UI",
+    "Instant playlist suggestions"
+  ],
+  tech: ["Python", "Machine Learning", "Streamlit"],
+  github: "https://github.com/mallikharjun9999/Mood-Tunes.git",
+  live: null,
+  cta: "View GitHub Repo"
+},
+{
+  title: "🏫 Attendance & Curriculum Management App",
+  description: "Comprehensive academic management platform for handling attendance records, curriculum tracking, and student administration.",
+  features: [
+    "Attendance management",
+    "Curriculum tracking",
+    "Student records",
+    "Admin controls"
+  ],
+  tech: ["Python", "Django", "SQLite"],
+  github: "https://github.com/mallikharjun9999/Attendance-Curriculam-Management-App.git",
+  live: null,
+  cta: "View GitHub Repo"
+},
+{
+  title: "📌 Complaint Management System",
+  description: "Digital complaint registration and resolution platform for managing user grievances efficiently.",
+  features: [
+    "Complaint submission",
+    "Status tracking",
+    "Admin resolution panel",
+    "User notifications"
+  ],
+  tech: ["Nodejs", "React.js", "Sqlite"],
+  github: "https://github.com/mallikharjun9999/complaint-management-system.git",
+  live: null,
+  cta: "View GitHub Repo"
+},
+{
+  title: "🎯 Object Detection App",
+  description: "Computer vision application capable of identifying and locating objects within images or video streams.",
+  features: [
+    "Real-time object detection",
+    "Bounding box predictions",
+    "Image uploads",
+    "Multiple object classes"
+  ],
+  tech: ["Python", "OpenCV", "YOLO"],
+  github: "https://github.com/mallikharjun9999/object-detection-app.git",
+  live: null,
+  cta: "View GitHub Repo"
+},
+{
+  title: "👁️ NeuralEye — ANN Image Classifier",
+  description: "Artificial Neural Network-based image classification system trained to recognize multiple image categories.",
+  features: [
+    "ANN-based classification",
+    "Image uploads",
+    "Prediction results",
+    "Model evaluation"
+  ],
+  tech: ["Python", "TensorFlow", "Neural Networks"],
+  github: "https://github.com/mallikharjun9999/image-classifier.git",
+  live: null,
+  cta: "View GitHub Repo"
+},
+{
+  title: "💼 Freelancing Platform",
+  description: "Marketplace platform connecting freelancers and clients for project posting, bidding, and collaboration.",
+  features: [
+    "User accounts",
+    "Project posting",
+    "Bidding system",
+    "Messaging workflow"
+  ],
+  tech: ["Node.js", "React.js", "Sqlite3"],
+  github: "https://github.com/mallikharjun9999/Freelancing-Platform.git",
+  live: null,
+  cta: "View GitHub Repo"
+},
+{
+  title: "🎓 Alumni Platform",
+  description: "Networking platform for alumni to connect, share opportunities, and stay engaged with institutions.",
+  features: [
+    "Alumni registration",
+    "Networking features",
+    "Job opportunities",
+    "Community updates"
+  ],
+  tech: ["Node.js", "React.js", "Sqlite"],
+  github: "https://github.com/mallikharjun9999/Alumni-Platform.git",
+  live: null,
+  cta: "View GitHub Repo"
+},
+{
+  title: "💬 WhatsApp Clone",
+  description: "Real-time messaging application inspired by WhatsApp with chat, contacts, and authentication features.",
+  features: [
+    "Real-time chat",
+    "User authentication",
+    "Contact management",
+    "Responsive UI"
+  ],
+  tech: ["React", "Node.js", "Socket.io", "Sqlite"],
+  github: "https://github.com/mallikharjun9999/whatsapp-clone.git",
+  live: null,
+  cta: "View GitHub Repo"
+},
+  {
     title: "🍽️ Food Delivery Platform API",
     description: "A comprehensive backend API for a complete food delivery platform with JWT authentication, restaurant management, cart functionality, order processing, and payment integration.",
     features: [
