@@ -42,18 +42,22 @@ const Index = () => {
     { name: "Spring Boot", icon: <Coffee className="w-3 h-3 sm:w-4 sm:h-4" /> },
     { name: "Java", icon: <Code className="w-3 h-3 sm:w-4 sm:h-4" /> },
     { name: "Python", icon: <Code className="w-3 h-3 sm:w-4 sm:h-4" /> },
+    { name: "Django", icon: <Code className="w-3 h-3 sm:w-4 sm:h-4" /> },
+    { name: "Fast API", icon: <Code className="w-3 h-3 sm:w-4 sm:h-4" /> },
     { name: "C++", icon: <Code className="w-3 h-3 sm:w-4 sm:h-4" /> },
+    { name: "C", icon: <Code className="w-3 h-3 sm:w-4 sm:h-4" /> },
     { name: "HTML", icon: <FileCode className="w-3 h-3 sm:w-4 sm:h-4" /> },
     { name: "CSS", icon: <Palette className="w-3 h-3 sm:w-4 sm:h-4" /> },
+    { name: "Tailwind CSS", icon: <Palette className="w-3 h-3 sm:w-4 sm:h-4" /> },
     { name: "JavaScript", icon: <Code className="w-3 h-3 sm:w-4 sm:h-4" /> },
     { name: "DSA", icon: <Brain className="w-3 h-3 sm:w-4 sm:h-4" /> },
     { name: "MongoDB", icon: <Database className="w-3 h-3 sm:w-4 sm:h-4" /> },
     { name: "MySQL", icon: <Database className="w-3 h-3 sm:w-4 sm:h-4" /> },
-    { name: "Express.js", icon: <Server className="w-3 h-3 sm:w-4 sm:h-4" /> },
+    { name: "Node.js", icon: <Server className="w-3 h-3 sm:w-4 sm:h-4" /> },
     { name: "REST APIs", icon: <Globe className="w-3 h-3 sm:w-4 sm:h-4" /> },
     { name: "Git", icon: <Github className="w-3 h-3 sm:w-4 sm:h-4" /> }
   ];
-
+{ name: "CSS", icon: <Palette className="w-3 h-3 sm:w-4 sm:h-4" /> },
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     element?.scrollIntoView({ behavior: 'smooth' });
@@ -63,7 +67,202 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       {/* Navigation */}
       <nav className="fixed top-0 w-full z-50 glass-card">
-        <div className="container-width">
+        <div className="container-width">{
+  title: "🎨 Ghibli Art Generator",
+  description: "AI-powered image generation app that transforms prompts into Studio Ghibli-inspired artwork using modern generative AI tools.",
+  features: [
+    "Text-to-image generation",
+    "Ghibli-style art rendering",
+    "Interactive UI",
+    "Instant image previews"
+  ],
+  tech: ["React", "Vite", "AI API"],
+  github: "https://github.com/mallikharjun9999/ghibli-art-generator.git",
+  live: null,
+  cta: "View GitHub Repo"
+},
+{
+  title: "📷 Smart Attendance App",
+  description: "Automated attendance management system designed to track and manage student attendance efficiently.",
+  features: [
+    "Attendance marking",
+    "Student management",
+    "Attendance reports",
+    "Admin dashboard"
+  ],
+  tech: ["Python", "Django", "SQLite"],
+  github: "https://github.com/mallikharjun9999/smart-attendance-app",
+  live: null,
+  cta: "View GitHub Repo"
+},
+{
+  title: "🎵 AI Music Recommendation System",
+  description: "Machine learning-based recommendation engine that suggests songs based on user preferences and listening patterns.",
+  features: [
+    "Personalized recommendations",
+    "Music similarity engine",
+    "User preference analysis",
+    "Recommendation dashboard"
+  ],
+  tech: ["Python", "Machine Learning", "Pandas", "Streamlit"],
+  github: "https://github.com/mallikharjun9999/AI-Music-Recommendation-System/tree/main",
+  live: null,
+  cta: "View GitHub Repo"
+},
+{
+  title: "📺 Netflix Analytics Dashboard",
+  description: "Interactive analytics dashboard built to visualize Netflix content trends, ratings, genres, and country-based insights.",
+  features: [
+    "Content trend analysis",
+    "Genre insights",
+    "Country-wise analytics",
+    "Interactive charts"
+  ],
+  tech: ["Python", "Django", "Pandas", "Plotly"],
+  github: "https://github.com/mallikharjun9999/netflix-analytics-dashboard",
+  live: null,
+  cta: "View GitHub Repo"
+},
+{
+  title: "🔥 AI Forest Fire Detection System",
+  description: "Computer vision project that detects forest fire presence from images using deep learning models.",
+  features: [
+    "Fire image detection",
+    "AI-powered predictions",
+    "Real-time classification",
+    "Disaster prevention support"
+  ],
+  tech: ["Python", "TensorFlow", "OpenCV"],
+  github: "https://github.com/mallikharjun9999/AI-Forest-Fire-Detection-System.git",
+  live: null,
+  cta: "View GitHub Repo"
+},
+{
+  title: "📸 Instagram Clone",
+  description: "Social media platform clone with user posts, likes, comments, authentication, and profile management.",
+  features: [
+    "User authentication",
+    "Create posts",
+    "Like & comment system",
+    "Profile pages"
+  ],
+  tech: ["React", "Node.js", "Sqlite"],
+  github: "https://github.com/mallikharjun9999/instagram-clone.git",
+  live: null,
+  cta: "View GitHub Repo"
+},
+{
+  title: "🎧 Mood Tunes",
+  description: "Emotion-based music recommendation platform that suggests songs based on the user's current mood.",
+  features: [
+    "Mood detection",
+    "Music recommendations",
+    "Simple UI",
+    "Instant playlist suggestions"
+  ],
+  tech: ["Python", "Machine Learning", "Streamlit"],
+  github: "https://github.com/mallikharjun9999/Mood-Tunes.git",
+  live: null,
+  cta: "View GitHub Repo"
+},
+{
+  title: "🏫 Attendance & Curriculum Management App",
+  description: "Comprehensive academic management platform for handling attendance records, curriculum tracking, and student administration.",
+  features: [
+    "Attendance management",
+    "Curriculum tracking",
+    "Student records",
+    "Admin controls"
+  ],
+  tech: ["Python", "Django", "SQLite"],
+  github: "https://github.com/mallikharjun9999/Attendance-Curriculam-Management-App.git",
+  live: null,
+  cta: "View GitHub Repo"
+},
+{
+  title: "📌 Complaint Management System",
+  description: "Digital complaint registration and resolution platform for managing user grievances efficiently.",
+  features: [
+    "Complaint submission",
+    "Status tracking",
+    "Admin resolution panel",
+    "User notifications"
+  ],
+  tech: ["Nodejs", "React.js", "Sqlite"],
+  github: "https://github.com/mallikharjun9999/complaint-management-system.git",
+  live: null,
+  cta: "View GitHub Repo"
+},
+{
+  title: "🎯 Object Detection App",
+  description: "Computer vision application capable of identifying and locating objects within images or video streams.",
+  features: [
+    "Real-time object detection",
+    "Bounding box predictions",
+    "Image uploads",
+    "Multiple object classes"
+  ],
+  tech: ["Python", "OpenCV", "YOLO"],
+  github: "https://github.com/mallikharjun9999/object-detection-app.git",
+  live: null,
+  cta: "View GitHub Repo"
+},
+{
+  title: "👁️ NeuralEye — ANN Image Classifier",
+  description: "Artificial Neural Network-based image classification system trained to recognize multiple image categories.",
+  features: [
+    "ANN-based classification",
+    "Image uploads",
+    "Prediction results",
+    "Model evaluation"
+  ],
+  tech: ["Python", "TensorFlow", "Neural Networks"],
+  github: "https://github.com/mallikharjun9999/image-classifier.git",
+  live: null,
+  cta: "View GitHub Repo"
+},
+{
+  title: "💼 Freelancing Platform",
+  description: "Marketplace platform connecting freelancers and clients for project posting, bidding, and collaboration.",
+  features: [
+    "User accounts",
+    "Project posting",
+    "Bidding system",
+    "Messaging workflow"
+  ],
+  tech: ["Node.js", "React.js", "Sqlite3"],
+  github: "https://github.com/mallikharjun9999/Freelancing-Platform.git",
+  live: null,
+  cta: "View GitHub Repo"
+},
+{
+  title: "🎓 Alumni Platform",
+  description: "Networking platform for alumni to connect, share opportunities, and stay engaged with institutions.",
+  features: [
+    "Alumni registration",
+    "Networking features",
+    "Job opportunities",
+    "Community updates"
+  ],
+  tech: ["Node.js", "React.js", "Sqlite"],
+  github: "https://github.com/mallikharjun9999/Alumni-Platform.git",
+  live: null,
+  cta: "View GitHub Repo"
+},
+{
+  title: "💬 WhatsApp Clone",
+  description: "Real-time messaging application inspired by WhatsApp with chat, contacts, and authentication features.",
+  features: [
+    "Real-time chat",
+    "User authentication",
+    "Contact management",
+    "Responsive UI"
+  ],
+  tech: ["React", "Node.js", "Socket.io", "Sqlite"],
+  github: "https://github.com/mallikharjun9999/whatsapp-clone.git",
+  live: null,
+  cta: "View GitHub Repo"
+},
           <div className="flex items-center justify-between h-16">
             <div className="text-lg sm:text-xl font-bold text-gradient">
               Mallikharjuna Rao
@@ -237,20 +436,20 @@ const Index = () => {
       <section id="mentorship" className="section-padding">
         <div className="container-width">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8 sm:mb-12 text-gradient">
-            Mentorship Impact
+            Teaching Impact
           </h2>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 max-w-5xl mx-auto mb-8 sm:mb-12">
             <Card className="text-center glass-card animated-card card-gradient-1 animate-pulse-glow">
               <CardContent className="p-4 sm:p-6">
                 <Users className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 mx-auto mb-2 sm:mb-4 text-primary" />
-                <div className="text-xl sm:text-2xl md:text-3xl font-bold text-primary mb-1 sm:mb-2">1000+</div>
-                <div className="text-xs sm:text-sm text-muted-foreground">Doubts Resolved</div>
+                <div className="text-xl sm:text-2xl md:text-3xl font-bold text-primary mb-1 sm:mb-2">10+</div>
+                <div className="text-xs sm:text-sm text-muted-foreground">Technologies Teached</div>
               </CardContent>
             </Card>
             <Card className="text-center glass-card animated-card card-gradient-2 animate-pulse-glow" style={{ animationDelay: '0.5s' }}>
               <CardContent className="p-4 sm:p-6">
                 <BookOpen className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 mx-auto mb-2 sm:mb-4 text-primary" />
-                <div className="text-xl sm:text-2xl md:text-3xl font-bold text-primary mb-1 sm:mb-2">500+</div>
+                <div className="text-xl sm:text-2xl md:text-3xl font-bold text-primary mb-1 sm:mb-2">1000+</div>
                 <div className="text-xs sm:text-sm text-muted-foreground">Students Trained</div>
               </CardContent>
             </Card>
